@@ -1,12 +1,12 @@
 {
-  "name": "lierni-murgoitio-react-portfolio",            
+  "name": "lierni-murgoitio-react-portfolio",
   "version": "1.0.0",
-  "description": "Personal portfolio app built in React",           
+  "description": "Personal portfolio app built in React",
   "scripts": {
     "preinstall": "npm set audit false",
-    "start": "webpack-dev-server --config webpack/dev.config.js --watch",  
-    "build": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js --progress --display-error-details --color",  
-    "heroku-postbuild": "npm run build",  
+    "start": "webpack-dev-server --config webpack/dev.config.js --watch",
+    "build": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js --progress --display-error-details --color",
+    "heroku-postbuild": "npm run build",
     "precommit": "eslint src",
     "prod": "NODE_ENV=production node server.js"
   },
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git@github.com:bottega-code-school/js-builder.git"
   },
-  "keywords": [   
+  "keywords": [
     "es6",
     "es7",
     "webpack2",
@@ -25,16 +25,16 @@
     "sass",
     "css module"
   ],
-  "author": "Lierni Murgoitio",                          
+  "author": "Lierni Murgoitio",
   "license": "MIT",
-  "bugs": {            
+  "bugs": {
     "url": "https://github.com/bottega-code-school/js-builder/issues"
   },
   "homepage": "https://github.com/bottega-code-school/js-builder",
-  "dependencies": {   
+  "dependencies": {
     "ajv": "6.12.0",
     "autoprefixer": "^9.1.0",
-    "axios": "0.21.1",
+    "axios": "^0.21.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^7.2.3",
@@ -59,7 +59,9 @@
     "node-sass": "^4.13.1",
     "postcss-loader": "^2.1.6",
     "react": "16.13.1",
+    "react-codemod": "^5.4.3",
     "react-dom": "16.13.1",
+    "react-dropzone-component": "^3.2.0",
     "react-redux": "7.2.0",
     "react-router": "5.1.2",
     "react-router-dom": "5.1.2",
@@ -73,7 +75,8 @@
     "webpack-hot-middleware": "2.25.0",
     "webpack-merge": "4.2.2"
   },
-  "devDependencies": {   
+  "devDependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-react": "^6.24.1",
